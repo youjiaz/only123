@@ -1,0 +1,1210 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>從基層開始，一步步走向更高的舞台 - 張麗蘭董事長專訪</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #1e3a8a;
+            --secondary: #d97706;
+            --accent: #b45309;
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --gold: #f59e0b;
+            --gradient-story: linear-gradient(135deg, #f8fafc 0%, #e0f2fe 50%, #bae6fd 100%);
+            --gradient-profile: linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%);
+            --gradient-chapters: linear-gradient(135deg, #fdf4ff 0%, #fae8ff 50%, #f3e8ff 100%);
+            --gradient-posters: linear-gradient(135deg, #fffbeb 0%, #fef3c7 50%, #fde68a 100%);
+            --gradient-marketing: linear-gradient(135deg, #eff6ff 0%, #dbeafe 50%, #bfdbfe 100%);
+            --gradient-video: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+            --gradient-team: linear-gradient(135deg, #fdf2f8 0%, #fce7f3 50%, #fbcfe8 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "微軟正黑體", "Microsoft JhengHei", "Noto Sans TC", sans-serif;
+            background-color: #f8fafc;
+            color: var(--dark);
+            line-height: 1.8;
+            overflow-x: hidden;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.2rem 4%;
+            transition: all 0.3s ease;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 1.45rem;
+            color: var(--primary);
+            letter-spacing: 1px;
+            text-decoration: none;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 1.5rem;
+            align-items: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            padding: 0.5rem 0.9rem;
+            border-radius: 20px;
+        }
+
+        nav a.active {
+            color: white;
+            background: var(--secondary);
+            box-shadow: 0 4px 12px rgba(217, 119, 6, 0.35);
+        }
+
+        nav a:hover:not(.active) {
+            color: var(--secondary);
+        }
+
+        .hero {
+            height: 100vh;
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.65), rgba(30, 58, 138, 0.75)), url('S2.jpg') center/cover no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 0 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            width: 750px;
+            height: 750px;
+            background: radial-gradient(circle, rgba(253, 230, 138, 0.45) 0%, rgba(245, 158, 11, 0.2) 45%, rgba(30, 58, 138, 0) 75%);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            pointer-events: none;
+            animation: heroGlow 8s ease-in-out infinite alternate;
+        }
+
+        @keyframes heroGlow {
+            0% { transform: translate(-50%, -50%) scale(0.9); opacity: 0.7; }
+            100% { transform: translate(-50%, -50%) scale(1.18); opacity: 1; }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 1100px;
+            background: rgba(15, 23, 42, 0.72);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            padding: 4rem 3.5rem;
+            border-radius: 24px;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.6);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero-title-glow {
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 1.5rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-shadow: 0 0 10px rgba(253, 230, 138, 0.9),
+                         0 0 20px rgba(245, 158, 11, 0.7),
+                         0 0 30px rgba(217, 119, 6, 0.5),
+                         0 0 40px rgba(217, 119, 6, 0.3);
+            animation: textGlowPulse 3s ease-in-out infinite alternate;
+        }
+
+        @keyframes textGlowPulse {
+            0% { text-shadow: 0 0 10px rgba(253, 230, 138, 0.7), 0 0 20px rgba(245, 158, 11, 0.5), 0 0 30px rgba(217, 119, 6, 0.3); }
+            100% { text-shadow: 0 0 16px rgba(253, 230, 138, 1), 0 0 32px rgba(245, 158, 11, 0.8), 0 0 48px rgba(217, 119, 6, 0.6), 0 0 64px rgba(217, 119, 6, 0.4); }
+        }
+
+        .hero h1 {
+            font-size: 3.2rem;
+            font-weight: 700;
+            margin-bottom: 1.2rem;
+            text-shadow: 0 4px 20px rgba(0,0,0,0.6);
+            letter-spacing: 2px;
+            line-height: 1.3;
+        }
+
+        .hero-subtitle-line {
+            font-size: 1.5rem;
+            color: #fef08a;
+            font-weight: 600;
+            margin-bottom: 1.2rem;
+            letter-spacing: 1px;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            max-width: 950px;
+            margin: 0 auto 2.5rem auto;
+            opacity: 0.95;
+            font-weight: 400;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+            line-height: 1.8;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn-primary {
+            display: inline-block;
+            background: var(--secondary);
+            color: white;
+            padding: 1.15rem 3rem;
+            font-size: 1.15rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            box-shadow: 0 10px 25px rgba(217, 119, 6, 0.4);
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background: var(--accent);
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(217, 119, 6, 0.6);
+        }
+
+        .btn-outline {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(5px);
+            color: white;
+            padding: 1.15rem 3rem;
+            font-size: 1.15rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            border: 2px solid rgba(255, 255, 255, 0.4);
+            transition: all 0.3s ease;
+        }
+
+        .btn-outline:hover {
+            background: rgba(255, 255, 255, 0.3);
+            border-color: white;
+            transform: translateY(-3px);
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 6rem 2rem;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.2rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: var(--secondary);
+            margin: 0.75rem auto 0;
+            border-radius: 2px;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: #475569;
+            font-size: 1.1rem;
+            margin-bottom: 4rem;
+        }
+
+        .story-section {
+            background: var(--gradient-story);
+            padding: 6rem 2rem;
+        }
+
+        .story-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .story-card {
+            backdrop-filter: blur(12px);
+            padding: 3rem 2.8rem;
+            border-radius: 24px;
+            box-shadow: 0 20px 45px rgba(0, 0, 0, 0.08), inset 0 1px 2px rgba(255, 255, 255, 0.9);
+            transition: transform 0.35s ease, box-shadow 0.35s ease;
+            position: relative;
+        }
+
+        .story-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.12), 0 0 25px rgba(255, 255, 255, 0.8);
+        }
+
+        .story-card.card-1 {
+            background: linear-gradient(135deg, rgba(255, 228, 230, 0.92), rgba(254, 205, 211, 0.6));
+            border-top: 6px solid #e11d48;
+            border-left: 1px solid rgba(255, 255, 255, 0.8);
+        }
+
+        .story-card.card-2 {
+            background: linear-gradient(135deg, rgba(254, 243, 199, 0.92), rgba(253, 224, 71, 0.5));
+            border-top: 6px solid #d97706;
+            border-left: 1px solid rgba(255, 255, 255, 0.8);
+        }
+
+        .story-card.card-3 {
+            background: linear-gradient(135deg, rgba(209, 250, 229, 0.92), rgba(167, 243, 208, 0.5));
+            border-top: 6px solid #059669;
+            border-left: 1px solid rgba(255, 255, 255, 0.8);
+        }
+
+        .story-card.card-1 i { color: #e11d48; font-size: 2.6rem; margin-bottom: 1.5rem; }
+        .story-card.card-2 i { color: #d97706; font-size: 2.6rem; margin-bottom: 1.5rem; }
+        .story-card.card-3 i { color: #059669; font-size: 2.6rem; margin-bottom: 1.5rem; }
+
+        .story-card h3 {
+            font-size: 1.9rem;
+            margin-bottom: 1.2rem;
+            color: var(--dark);
+            font-weight: 700;
+        }
+
+        .story-card p {
+            color: #334155;
+            font-size: 1.12rem;
+            line-height: 1.8;
+        }
+
+        .quote-profile-section {
+            padding: 6rem 2rem;
+            background: var(--gradient-profile);
+        }
+
+        .profile-grid {
+            display: flex;
+            align-items: center;
+            gap: 4rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+        }
+
+        .profile-img {
+            flex: 1;
+            min-width: 320px;
+            border-radius: 20px;
+            overflow: hidden;
+            background: white;
+            padding: 12px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.12), 0 0 30px rgba(253, 230, 138, 0.8), 0 0 60px rgba(245, 158, 11, 0.4);
+            border: 2px solid rgba(253, 230, 138, 0.9);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .profile-img:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 25px 60px rgba(0,0,0,0.15), 0 0 40px rgba(253, 230, 138, 1), 0 0 80px rgba(245, 158, 11, 0.6);
+        }
+
+        .profile-img img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 14px;
+        }
+
+        .profile-content {
+            flex: 1.3;
+            min-width: 320px;
+        }
+
+        .profile-content h2 {
+            font-size: 2.3rem;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+        }
+
+        .profile-content blockquote {
+            font-size: 1.3rem;
+            font-style: italic;
+            color: var(--accent);
+            border-left: 5px solid var(--secondary);
+            padding-left: 1.5rem;
+            margin-bottom: 1.8rem;
+            line-height: 1.65;
+        }
+
+        .profile-content p {
+            color: #334155;
+            font-size: 1.15rem;
+            margin-bottom: 1.2rem;
+        }
+
+        .interview-chapters {
+            background: var(--gradient-chapters);
+            padding: 6rem 2rem;
+        }
+
+        .chapter-container {
+            max-width: 1300px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 4rem;
+        }
+
+        .chapter-row {
+            display: flex;
+            align-items: center;
+            gap: 4rem;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(248, 250, 252, 0.9));
+            backdrop-filter: blur(10px);
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            padding: 2.5rem;
+            border-left: 8px solid var(--primary);
+            border-right: 2px solid rgba(217, 119, 6, 0.3);
+            position: relative;
+        }
+
+        .chapter-row:nth-child(2) { border-left-color: var(--secondary); }
+        .chapter-row:nth-child(3) { border-left-color: #0284c7; }
+        .chapter-row:nth-child(4) { border-left-color: #9333ea; }
+
+        .chapter-row:hover {
+            transform: translateY(-8px) scale(1.01);
+            background: linear-gradient(135deg, rgba(255, 255, 255, 1), rgba(254, 249, 195, 0.35));
+            box-shadow: 0 25px 50px rgba(217, 119, 6, 0.22), 0 0 25px rgba(253, 230, 138, 0.8), 0 0 50px rgba(245, 158, 11, 0.35);
+        }
+
+        .chapter-row.reverse {
+            flex-direction: row-reverse;
+        }
+
+        .chapter-img {
+            flex: 1.3;
+            background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+            border-radius: 16px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+            box-shadow: inset 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .chapter-img img {
+            width: 100%;
+            height: auto;
+            max-height: 580px;
+            object-fit: contain;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            transition: transform 0.4s ease;
+        }
+
+        .chapter-row:hover .chapter-img img {
+            transform: scale(1.03);
+        }
+
+        .chapter-content {
+            flex: 1;
+            padding: 1.5rem;
+        }
+
+        .chapter-content h3 {
+            font-size: 1.9rem;
+            color: var(--primary);
+            margin-bottom: 1.2rem;
+            font-weight: 700;
+        }
+
+        .chapter-content p {
+            color: #475569;
+            font-size: 1.15rem;
+            line-height: 1.85;
+        }
+
+        .posters-section {
+            background: var(--gradient-posters);
+            padding: 6rem 2rem;
+        }
+
+        .poster-gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            max-width: 1550px;
+            margin: 0 auto;
+        }
+
+        .poster-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(8px);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.8);
+        }
+
+        .poster-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .poster-img-container {
+            width: 100%;
+            height: 520px;
+            background: #f8fafc;
+            padding: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .poster-img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border-radius: 8px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+        }
+
+        .poster-info {
+            padding: 1.5rem 1.2rem;
+            background: white;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .poster-info h3 {
+            font-size: 1.15rem;
+            color: var(--primary);
+            margin-bottom: 0.4rem;
+        }
+
+        .poster-info p {
+            color: #64748b;
+            font-size: 0.92rem;
+        }
+
+        .marketing-posters-section {
+            background: var(--gradient-marketing);
+            padding: 6rem 2rem;
+        }
+
+        .marketing-gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            max-width: 1550px;
+            margin: 0 auto;
+        }
+
+        .marketing-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(8px);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s ease;
+        }
+
+        .marketing-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .marketing-img-container {
+            width: 100%;
+            height: 520px;
+            background: #f8fafc;
+            padding: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .marketing-img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border-radius: 8px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+        }
+
+        .marketing-info {
+            padding: 1.5rem 1.2rem;
+            background: white;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .marketing-info h3 {
+            font-size: 1.15rem;
+            color: var(--primary);
+            margin-bottom: 0.4rem;
+        }
+
+        .marketing-info p {
+            color: #64748b;
+            font-size: 0.92rem;
+        }
+
+        /* 影片播放區與封面樣式 */
+        .video-section {
+            background: var(--gradient-video);
+            color: white;
+            padding: 6rem 2rem;
+            text-align: center;
+        }
+
+        .video-section .section-title {
+            color: white;
+        }
+
+        .video-section .section-subtitle {
+            color: #cbd5e1;
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            gap: 3rem;
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+        .video-box {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .video-box h3 {
+            font-size: 1.3rem;
+            color: var(--gold);
+        }
+
+        .video-wrapper {
+            display: flex;
+            flex-direction: column;
+            background: rgba(30, 41, 59, 0.85);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.45);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+        }
+
+        .video-container {
+            width: 100%;
+            aspect-ratio: 16/9;
+            position: relative;
+            cursor: pointer;
+            overflow: hidden;
+            background: #000;
+        }
+
+        .video-cover {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.4s ease, filter 0.3s ease;
+        }
+
+        .video-container:hover .video-cover {
+            transform: scale(1.04);
+            filter: brightness(0.88);
+        }
+
+        .play-btn-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 72px;
+            height: 72px;
+            background: rgba(217, 119, 6, 0.92);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 1.8rem;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5), 0 0 0 8px rgba(255, 255, 255, 0.25);
+            transition: transform 0.3s ease, background 0.3s ease;
+            pointer-events: none;
+        }
+
+        .play-btn-overlay i {
+            margin-left: 5px;
+        }
+
+        .video-container:hover .play-btn-overlay {
+            transform: translate(-50%, -50%) scale(1.12);
+            background: var(--accent);
+        }
+
+        .video-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: block;
+        }
+
+        .video-footer-bar {
+            padding: 0.75rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(15, 23, 42, 0.7);
+        }
+
+        .video-fallback-btn {
+            background: var(--secondary);
+            color: white;
+            padding: 0.55rem 1.3rem;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 600;
+            transition: background 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .video-fallback-btn:hover {
+            background: var(--accent);
+        }
+
+        .team-section {
+            background: var(--gradient-team);
+            padding: 6rem 2rem;
+            text-align: center;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 1.5rem;
+            max-width: 1650px;
+            margin: 0 auto;
+        }
+
+        .team-card {
+            background: transparent;
+            padding: 1rem 0.5rem;
+            border-radius: 16px;
+            transition: transform 0.3s ease;
+        }
+
+        .team-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .team-avatar {
+            width: 190px;
+            height: 190px;
+            border-radius: 50%;
+            margin: 0 auto 1.2rem;
+            overflow: hidden;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+            border: none;
+            background: transparent;
+        }
+
+        .team-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .team-card h3 {
+            font-size: 1.3rem;
+            color: var(--primary);
+            margin-bottom: 0.3rem;
+            font-weight: 700;
+        }
+
+        .team-card p {
+            color: var(--secondary);
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        footer {
+            background: #020617;
+            color: #94a3b8;
+            text-align: center;
+            padding: 3rem 1rem;
+            font-size: 0.95rem;
+        }
+
+        footer p {
+            margin-bottom: 0.5rem;
+        }
+
+        @media (max-width: 1400px) {
+            .team-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 1200px) {
+            .poster-gallery, .marketing-gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .poster-img-container, .marketing-img-container {
+                height: 420px;
+            }
+            .video-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            .hero-title-glow {
+                font-size: 2rem;
+            }
+            .hero p {
+                font-size: 1.1rem;
+            }
+            nav ul {
+                display: none;
+            }
+            .chapter-row, .chapter-row.reverse {
+                flex-direction: column;
+                gap: 0;
+                padding: 1rem;
+            }
+            .poster-gallery, .marketing-gallery, .team-grid {
+                grid-template-columns: 1fr;
+            }
+            .poster-img-container, .marketing-img-container {
+                height: 380px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 導覽列 -->
+    <header>
+        <a href="#" class="logo">張麗蘭董事長專訪</a>
+        <nav>
+            <ul id="nav-list">
+                <li><a href="#story" class="nav-link">核心哲學</a></li>
+                <li><a href="#profile" class="nav-link">個人介紹</a></li>
+                <li><a href="#chapters" class="nav-link">四大核心</a></li>
+                <li><a href="#posters" class="nav-link">專訪職人海報</a></li>
+                <li><a href="#marketing" class="nav-link">行銷海報</a></li>
+                <li><a href="#video" class="nav-link">訪談影片</a></li>
+                <li><a href="#team" class="nav-link">團隊介紹</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 首頁封面區 (Hero Section) -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-title-glow">Only 董事長</div>
+            <h1>從基層開始，一步步走向更高的舞台</h1>
+            <p class="hero-subtitle-line">人生沒有終點，只有不斷學習的開始！</p>
+            <p>她用四十年職場淬鍊與前瞻視野證明——只要願意學習，人生就沒有極限。</p>
+            <div class="hero-buttons">
+                <a href="#story" class="btn-primary">探索專訪故事</a>
+                <a href="#video" class="btn-outline">觀看訪談影片</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 董事長的故事與核心哲學 -->
+    <section id="story" class="story-section">
+        <div class="container" style="padding: 0;">
+            <h2 class="section-title">董事長的故事與核心哲學</h2>
+            <p class="section-subtitle">從四十年的職場歷練、疫情危機的精準預判，到不設限的終身學習之路</p>
+            
+            <div class="story-grid">
+                <div class="story-card card-1">
+                    <i class="fas fa-shopping-cart"></i>
+                    <h3>銷售起步多元歷練</h3>
+                    <p>從基層電器銷售與作業員做起，歷經全方位職務歷練，奠定扎實的企業經營基礎。</p>
+                </div>
+                <div class="story-card card-2">
+                    <i class="fas fa-globe-americas"></i>
+                    <h3>跨國視野勇敢獨旅</h3>
+                    <p>拓展全球商品採購與歐洲精品代工，並獨自遠赴澳洲旅行，勇敢跨出舒適圈。</p>
+                </div>
+                <div class="story-card card-3">
+                    <i class="fas fa-book-reader"></i>
+                    <h3>終身學習迎向浪潮</h3>
+                    <p>64歲退休創立基金會，70歲前考取台大碩士，以身作則實踐活到老學到老。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 個人介紹專區 -->
+    <section id="profile" class="quote-profile-section">
+        <div class="container" style="padding: 0;">
+            <div class="profile-grid">
+                <div class="profile-img">
+                    <img src="S3.jpg" alt="張麗蘭董事長半身照 S3">
+                </div>
+                <div class="profile-content">
+                    <h2>破局前行的大健康實踐者</h2>
+                    <blockquote>「每一次挑戰，都是讓自己更強大的機會。人生沒有終點，只有不斷學習的開始！」</blockquote>
+                    <p><strong>林建智教育基金會董事長 — 張麗蘭</strong></p>
+                    <p>從六十四歲華麗轉身、獨自完成一百八十天環遊世界，到創立林建智教育基金會回饋社會，麗蘭董事長的人生本身就是一本精彩的破局之書。</p>
+                    <p>年輕時，她從基層歷練到國際談判，深信「懂每一個環節，才能畫好一張桌子」。面對多變市場，她帶領團隊跳脫同質化競爭，在疫情嚴峻時展現前瞻預判力逆勢突圍。</p>
+                    <p>如今她重返校園於臺大攻讀碩士，以跨界視野與終身學習精神，將後半生奉獻給健康產業，持續用智慧引領未來。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 訪談四大核心章節區 (S5 - S8) -->
+    <section id="chapters" class="interview-chapters">
+        <div class="container" style="padding: 0;">
+            <h2 class="section-title">訪談核心四大章節</h2>
+            <p class="section-subtitle">深入探索董事長在基金會背景、全球市場突破、團隊經營與未來 AI 學習的精闢見解</p>
+            
+            <div class="chapter-container">
+                <!-- S5 -->
+                <div class="chapter-row">
+                    <div class="chapter-img">
+                        <img src="S5.jpg" alt="一、董事長創辦基金會背景 S5">
+                    </div>
+                    <div class="chapter-content">
+                        <h3>一、董事長創辦基金會背景</h3>
+                        <p>探討董事長在 64 歲華麗轉身後的退休生活，完成環遊世界 180 天與 46 天歐洲獨旅的壯舉，並以自身公司盈餘創立林建智教育基金會，全心投入健康產業與回饋社會的初衷。</p>
+                    </div>
+                </div>
+
+                <!-- S6 -->
+                <div class="chapter-row reverse">
+                    <div class="chapter-img">
+                        <img src="S6.jpg" alt="二、突破與轉折：從國內走向全球市場 S6">
+                    </div>
+                    <div class="chapter-content">
+                        <h3>二、突破與轉折：從國內走向全球市場</h3>
+                        <p>解析從國內代理跨足全球海外採購與高階歐洲家電代工（OEM/ODM）的戰略轉折。在疫情期間透過精準的前瞻預判與庫存佈署，帶領企業在變局中逆勢突圍。</p>
+                    </div>
+                </div>
+
+                <!-- S7 -->
+                <div class="chapter-row">
+                    <div class="chapter-img">
+                        <img src="S7.jpg" alt="三、領導哲學與團隊經營 S7">
+                    </div>
+                    <div class="chapter-content">
+                        <h3>三、領導哲學與團隊經營</h3>
+                        <p>秉持全方位經歷打下的扎實根基，強調累積信任與資源、包容與放大成員優點，並在產品採購的第一關就為品質「定生死」，透過團隊共識共創卓越價值。</p>
+                    </div>
+                </div>
+
+                <!-- S8 -->
+                <div class="chapter-row reverse">
+                    <div class="chapter-img">
+                        <img src="S8.jpg" alt="四、迎向 AI 與未來的跨界學習 S8">
+                    </div>
+                    <div class="chapter-content">
+                        <h3>四、迎向 AI 與未來的跨界學習</h3>
+                        <p>面對瞬息萬變的 AI 時代，董事長以身作則重返校園攻讀臺大碩士。透過「大圓型模型」的跨界學習生態系，持續吸納新知，引領團隊在未來大健康產業中無畏前行。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 專訪職人海報區 (S2, S13, S14, S15) -->
+    <section id="posters" class="posters-section">
+        <div class="container" style="padding: 0; max-width: 1550px;">
+            <h2 class="section-title">專訪職人海報</h2>
+            <p class="section-subtitle">精選視覺設計，完整呈現董事長的創業歷程與精神標語</p>
+            
+            <div class="poster-gallery">
+                <div class="poster-card">
+                    <div class="poster-img-container">
+                        <img src="S2.jpg" alt="專訪職人海報 S2">
+                    </div>
+                    <div class="poster-info">
+                        <h3>職場歷程・從銷售到領導</h3>
+                        <p>一步一腳印，最終成為董事長</p>
+                    </div>
+                </div>
+                <div class="poster-card">
+                    <div class="poster-img-container">
+                        <img src="S13.jpg" alt="專訪職人海報 S13">
+                    </div>
+                    <div class="poster-info">
+                        <h3>職人故事・勇敢追夢</h3>
+                        <p>不設限的精彩人生，從這裡開始</p>
+                    </div>
+                </div>
+                <div class="poster-card">
+                    <div class="poster-img-container">
+                        <img src="S14.jpg" alt="專訪職人海報 S14">
+                    </div>
+                    <div class="poster-info">
+                        <h3>職人精神・每一次挑戰</h3>
+                        <p>讓自己更強大的機會與視野</p>
+                    </div>
+                </div>
+                <div class="poster-card">
+                    <div class="poster-img-container">
+                        <img src="S15.jpg" alt="專訪職人海報 S15">
+                    </div>
+                    <div class="poster-info">
+                        <h3>職人講座・活到老學到老</h3>
+                        <p>不斷學習、迎向未來的無限可能</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 行銷職人宣傳海報區 (S9 - S12) -->
+    <section id="marketing" class="marketing-posters-section">
+        <div class="container" style="padding: 0; max-width: 1550px;">
+            <h2 class="section-title">行銷職人講座宣傳海報</h2>
+            <p class="section-subtitle">致理科技大學行銷與流通管理系・專題講座系列視覺設計</p>
+            
+            <div class="marketing-gallery">
+                <div class="marketing-card">
+                    <div class="marketing-img-container">
+                        <img src="S9.jpg" alt="行銷職人海報 S9">
+                    </div>
+                    <div class="marketing-info">
+                        <h3>講座海報 A</h3>
+                        <p>致理科大・行銷與流通系</p>
+                    </div>
+                </div>
+                <div class="marketing-card">
+                    <div class="marketing-img-container">
+                        <img src="S10.jpg" alt="行銷職人海報 S10">
+                    </div>
+                    <div class="marketing-info">
+                        <h3>講座海報 B</h3>
+                        <p>從基層開始，走向更高舞台</p>
+                    </div>
+                </div>
+                <div class="marketing-card">
+                    <div class="marketing-img-container">
+                        <img src="S11.jpg" alt="行銷職人海報 S11">
+                    </div>
+                    <div class="marketing-info">
+                        <h3>講座海報 C</h3>
+                        <p>2026.11.19 綜合教學大樓 E23</p>
+                    </div>
+                </div>
+                <div class="marketing-card">
+                    <div class="marketing-img-container">
+                        <img src="S12.jpg" alt="行銷職人海報 S12">
+                    </div>
+                    <div class="marketing-info">
+                        <h3>講座海報 D</h3>
+                        <p>主講人：only 董事長</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 影片播放專區（已對調：1分鐘為黑底 S23.jpg、16分鐘為白底 S22.jpg） -->
+    <section id="video" class="video-section">
+        <div class="container" style="padding: 0;">
+            <h2 class="section-title">精彩訪談影片</h2>
+            <p class="section-subtitle">點擊封面觀看精華預告與完整專訪影片</p>
+            
+            <div class="video-grid">
+                <!-- 1分鐘預告影片 (封面 S23.jpg 黑底) -->
+                <div class="video-box">
+                    <h3>精華焦點（1分鐘預告）</h3>
+                    <div class="video-wrapper">
+                        <div class="video-container" onclick="loadVideo(this, 'https://www.youtube.com/embed/LpMjPrN2vJ0?si=Z7ppidM7hw4zP9W-&autoplay=1')">
+                            <img src="S23.jpg" alt="ONLY董事長訪問 1分鐘預告封面" class="video-cover">
+                            <div class="play-btn-overlay"><i class="fas fa-play"></i></div>
+                        </div>
+                        <div class="video-footer-bar">
+                            <a href="https://youtube.com/shorts/LpMjPrN2vJ0?si=Z7ppidM7hw4zP9W-" target="_blank" class="video-fallback-btn"><i class="fab fa-youtube"></i> 前往 YouTube 觀看影片</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 16分鐘完整訪談 (封面 S22.jpg 白底) -->
+                <div class="video-box">
+                    <h3>完整深度訪談（16分鐘）</h3>
+                    <div class="video-wrapper">
+                        <div class="video-container" onclick="loadVideo(this, 'https://www.youtube.com/embed/Q-kVXrzD_kc?si=MFkdnMgIbbAFtvbs&autoplay=1')">
+                            <img src="S22.jpg" alt="ONLY董事長訪問 16分鐘完整訪談封面" class="video-cover">
+                            <div class="play-btn-overlay"><i class="fas fa-play"></i></div>
+                        </div>
+                        <div class="video-footer-bar">
+                            <a href="https://youtu.be/Q-kVXrzD_kc?si=MFkdnMgIbbAFtvbs" target="_blank" class="video-fallback-btn"><i class="fab fa-youtube"></i> 前往 YouTube 觀看影片</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 團隊介紹區 -->
+    <section id="team" class="team-section">
+        <div class="container" style="padding: 0; max-width: 1650px;">
+            <h2 class="section-title">製作團隊介紹</h2>
+            <p class="section-subtitle">專題企劃與網站製作團隊成員</p>
+            
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <img src="S16.jpg" alt="簡辰宇 S16">
+                    </div>
+                    <h3>簡辰宇</h3>
+                    <p>採訪編輯</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <img src="S17.jpg" alt="陳姿心 S17">
+                    </div>
+                    <h3>陳姿心</h3>
+                    <p>公關專員</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <img src="S18.jpg" alt="邵令伯 S18">
+                    </div>
+                    <h3>邵令伯</h3>
+                    <p>攝影師</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <img src="S19.jpg" alt="張晏羚 S19">
+                    </div>
+                    <h3>張晏羚</h3>
+                    <p>採訪編輯</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <img src="S20.jpg" alt="林意善 S20">
+                    </div>
+                    <h3>林意善</h3>
+                    <p>影片剪輯</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <img src="S21.jpg" alt="S21">
+                    </div>
+                    <h3>粘佑嘉</h3>
+                    <p>網頁架設</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 頁尾 -->
+    <footer>
+        <p>only 董事長團隊</p>
+        <p>&copy; 2026 Executive Interview Project. All Rights Reserved.</p>
+    </footer>
+
+    <!-- 腳本：點擊封面載入影片 & 滾動導覽高亮 -->
+    <script>
+        function loadVideo(container, embedUrl) {
+            container.innerHTML = `<iframe src="${embedUrl}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+            container.style.cursor = 'default';
+            container.onclick = null;
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('section, .hero');
+            const navLinks = document.querySelectorAll('.nav-link');
+
+            window.addEventListener('scroll', () => {
+                let current = '';
+                const scrollY = window.pageYOffset;
+
+                sections.forEach(section => {
+                    const sectionHeight = section.offsetHeight;
+                    const sectionTop = section.offsetTop - 150;
+                    if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === '#' + current) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
